@@ -1,8 +1,7 @@
 package com.example.callblocker.models
 
 object PhoneNormalizer {
-    /** "+33 4 24 12 34 56", "04 24 12...", "4 24" -> "424123456" / "424" */
-    fun national(raw: String): String {
+    fun toNational(raw: String): String {
         val s = raw.trim().replace(Regex("[\\s.\\-()]"), "")
         val stripped = when {
             s.startsWith("+33") -> s.removePrefix("+33")
@@ -10,6 +9,8 @@ object PhoneNormalizer {
             s.startsWith("0") -> s.removePrefix("0")
             else -> s
         }
-        return stripped.filter { it.isDigit() }
+        return stripped.filter(Char::isDigit)
     }
+
+    fun toDisplay(prefix: String): String = "0$prefix..."
 }
