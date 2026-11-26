@@ -19,7 +19,7 @@
         </activity>
 
         <service
-            android:name=".BlockerService"
+            android:name=".service.BlockerService"
             android:exported="true"
             android:permission="android.permission.BIND_SCREENING_SERVICE">
             <intent-filter>
