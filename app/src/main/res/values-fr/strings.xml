@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="blocking_active">Blocage actif</string>
+    <string name="grant_permission">Autoriser le filtrage des appels</string>
+    <string name="at_least_3_digits">Au moins 3 chiffres</string>
+    <string name="prefix_example">Préfixe (ex. : 04 24)</string>
+    <string name="add">Ajouter</string>
+    <string name="remove">Supprimer</string>
 </resources>
