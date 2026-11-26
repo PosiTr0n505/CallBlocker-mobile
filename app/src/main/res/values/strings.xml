@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">CallBlocker</string>
+    <string name="app_name" translatable="false">CallBlocker</string>
+    <string name="blocking_active">Blocking Active</string>
+    <string name="grant_permission">Grant call screening permission</string>
+    <string name="at_least_3_digits">At least 3 digits</string>
+    <string name="prefix_example">Prefix (e.g. 04 24)</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
 </resources>
